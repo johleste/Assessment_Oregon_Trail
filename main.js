@@ -29,16 +29,13 @@ constructor (cap){
 
     shouldQuarantine (){
         
-        for (let i; i < this.passengers.length; i++){
-            console.log[i]
-           if  ([`this.passengers[i]`].isHealthy = false) {
-             return true
-           }else
-           console.log(false)
-             }
-             return
-    
-    }
+        for (let i = 0; i < this.passengers.length; i++){
+           if  (this.passengers[i].isHealthy !== false) {
+             return true;
+           }
+        } 
+        return false;
+}
     totalFood () {
          console.log(this.passengers.length)
         for (let i=0; i < this.passengers.length; i++){
@@ -47,9 +44,9 @@ constructor (cap){
             totalFood += this.passengers[i].food
            console.log(totalFood)
             }
+            console.log(totalFood)
             return totalFood
         }
-
 
     
 
